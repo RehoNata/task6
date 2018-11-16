@@ -79,12 +79,17 @@ header {
 	padding:15px;
 	background: #00ff00;
 }
-.foto {
+.foto1 {
 	width:60%;
 	padding:15px;
 	background: #00ff00;
 
 	}
+.foto2   {
+		display: flex;
+	justify-content: center;
+	flex-wrap:wrap;
+}
 
 div.clearfix {
 	border-top:20px solid maroon ;
