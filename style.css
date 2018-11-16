@@ -1,0 +1,117 @@
+h1 {flex: 5;
+  text-transform: uppercase;
+  font-family: 'Cinzel Decorative', cursive;
+  font-size:42px;
+  color: black;
+    text-align:center;
+  text-shadow: 2px 2px 10px black;
+}
+h2 {font-family: 'Cinzel Decorative', cursive;
+  font-size:36px;
+  color: black;
+    text-align:center;
+}
+p, inpt, li {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #2a2a2a;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+
+.col-one {
+	width:80%;
+	float:left;	
+	}
+.col-to {
+	width:15%;
+	float:right;
+	}
+
+.cont {
+	   width:80px;
+       height:70px;
+	   padding:40 0 0 0;
+	   }
+
+ul.head1 {
+    clear:left;
+	font-size:24px;
+	list-style-type: none;
+    margin: 0;
+    padding: 15;
+    overflow: hidden;
+    background-color: #00ff00;
+}
+li.head1  {
+    float: left;
+	width:20%;
+	text-align:center;
+}
+
+
+li.head1  a,select {
+    color: black;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+li.head1  a:hover {
+    color: red;
+}
+header {
+	 margin-bottom: 10px;
+	border-color:fuchsia;
+}
+.box foto {
+	align:center;
+	}
+
+
+.box {
+	float:left;
+	padding:15px;
+	margin:15px;
+}
+.text {
+	width:30%;
+	padding:15px;
+	background: #00ff00;
+}
+.foto {
+	width:60%;
+	padding:15px;
+	background: #00ff00;
+
+	}
+
+div.clearfix {
+	border-top:20px solid maroon ;
+	border-bottom:20px solid maroon ;
+	margin:20;
+}
+.clearfix:after {
+	content:" ";
+	clear:both;
+	display:table;
+}
+
+.img-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  float: left;
+    width: 30%;
+	
+}
+img {
+	width:200;
+     height:180;
+	 padding:5px;
+	 align:center;
+}
+footer > p {
+	text-align:left;
+	font-size:18px;
+}
