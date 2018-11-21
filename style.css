@@ -48,8 +48,6 @@ li.head1  {
 	width:20%;
 	text-align:center;
 }
-
-
 li.head1  a {
     color: black;
     text-align: center;
@@ -89,13 +87,11 @@ div.row {
 	justify-content: center;
 	flex-wrap:wrap;
 }
-
 .img-container > img {
 	flex:30%;
 	width:200;
     height:180;
 	margin:15px;
- 	
 }
 footer > p {
 	text-align:left;
