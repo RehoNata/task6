@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 h1 {flex: 5;
   text-transform: uppercase;
   font-family: 'Cinzel Decorative', cursive;
@@ -33,36 +36,47 @@ p, inpt, li {
 	padding:40 0 0 0;
 }
 
-	ul.head1 {
-    clear:left;
-	display: flex;
-	font-size:24px;
+	.head1 {
+	clear:left;
+	display:flex;
+	flex-wrap:nowrap;
+	flex-direction:row;
+	padding: 15;
+	overflow: hidden;
 	list-style-type: none;
-    margin: 0;
-    padding: 15;
-    overflow: hidden;
     background-color: #00ff00;
 }
-li.head1  {
-    float: left;
-	width:20%;
+.head1 a  {
+   	width:20%;
+	font-size:24px;
+	text-decoration: none ;
 	text-align:center;
+	
 }
-li.head1  a {
-    color: black;
-    text-align: center;
-    padding: 10px;
-    text-decoration: none;
+@media screen and (max-width: 600px) {
+	.head1 { 
+	flex-direction:column;
+	text-align:center;
+	}
+	
+	.head1 a {
+		width: 100%;
+	}
 }
 
-li.head1  a:hover {
+.head1  a:hover {
     color: red;
 }
 header {
 	margin-bottom: 10px;
 	border-color:fuchsia;
 }
-div.row {
+.head1::after {
+	content:" ";
+	clear:both;
+	/*display:table;*/
+}
+div.col {
 	display: flex;
 	border-top:20px solid maroon ;
 	border-bottom:20px solid maroon ;
@@ -76,9 +90,9 @@ div.row {
 	background: #00ff00;
 }
 .foto1   {
-	justify-content: center;
-		flex: 60%;
+	flex: 60%;
 	margin:15px;
+	justify-content: center;
 	background: #00ff00;
 	}
 .foto2   {
@@ -87,11 +101,13 @@ div.row {
 	justify-content: center;
 	flex-wrap:wrap;
 }
+
 .img-container > img {
 	flex:30%;
 	width:200;
     height:180;
 	margin:15px;
+ 	
 }
 footer > p {
 	text-align:left;
